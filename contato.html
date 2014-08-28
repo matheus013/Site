@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="validador/css/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="validador/css/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+<link href="validador/css/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body id="contato">
+<div class="title">FALE CONOSCO<br>
+</div>
+<div class="formulario">
+<form action="enviar.php" method="POST" id="form_ico">
+  <!--  chama o enviar.php --> 
+  
+  <span id="sprytextfield1">
+  <input type="text" name="nomeremetente" class="textfield-nome" placeholder="Nome" size="20%"/>
+  <br />
+  <span class="textfieldRequiredMsg"></span></span> <span id="sprytextfield2">
+  <input type="text" name="emailremetente" class="textfield-nome" placeholder="E-mail" size="20%"/>
+  <br />
+  <span class="textfieldRequiredMsg"></span> <span class="textfieldInvalidFormatMsg"></span></span> <span id="sprytextfield5">
+  <input type="text" name="assunto" class="textfield-nome" placeholder="Assunto" size="20%"/>
+  <br />
+  <span class="textfieldRequiredMsg"></span></span><br>
+  <span id="sprytextarea1">
+  <textarea name="mensagem" cols="35" rows="6" placeholder="Mensagem"></textarea>
+  <br />
+  <span class="textareaRequiredMsg"></span></span>
+  <input name="enviar" type="reset" value="Limpar" class="btn-contato-reset"  />
+  <input name="enviar" type="submit" value="Enviar" class="btn-contato-enviar"  />
+</form>
+<br>
+<div id="flavio">    </div>
+</body>
+</div>
+<!--Fim do Conteudo Paginas-->
+
+<!-- Chama validação do formulário -->
+
+<script type="text/javascript" src="validador/js/SpryValidationTextField.js" language="javascript" ></script>
+<script type="text/javascript" src="validador/js/SpryValidationTextarea.js" language="javascript" ></script>
+<script type="text/javascript" src="validador/js/SpryValidationSelect.js" language="javascript" ></script>
+<script type="text/javascript">
+
+            var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+            var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+            var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+            var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+
+        </script>
+</html>
