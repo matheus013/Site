@@ -40,7 +40,7 @@ Cinza 		242 242 242		F2F2F2
 }
 /* Cor do fundo */
 body {
-		background-color: #141414;
+		background-color: #FFFFFF;
 	}
 
 /* Estilo barra do menu*/
@@ -96,7 +96,7 @@ body {
 
 #menu a.linkMenu {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #de3600;
     cursor: pointer;
 }
 
