@@ -1,0 +1,465 @@
+/* Cores do tema
+
+cor 		rgb				hex
+
+Roxo		42 19 55		2A1337
+Vermelho	237 26 58		ED1A3A
+Amarelo		247 236 0		F7EC00
+Azul		0 174 239		00AEEF
+Branco		255 255 255		FFFFFF
+Cinza 		242 242 242		F2F2F2
+
+*/
+/* Removendo previamente espaços em branco (espaçamentos) de todo os elementos */
+*{  
+    padding:0;
+    margin:0;
+    border-width: 1px;
+}
+
+/* Definindo fontes personalizadas */
+@font-face
+{
+    font-family:Code-Light;
+    src: url(fonts/CODE_Light.otf);
+}
+@font-face
+{
+    font-family:Code-Bold;
+    src: url(fonts/CODE_Bold.otf);
+}
+@font-face
+{
+    font-family: Billabong;
+    src: url(fonts/Billabong.ttf);
+}
+/* Ocultar barra de scroll */
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+/* Cor do fundo */
+body {
+		background-color: #141414;
+	}
+
+/* Estilo barra do menu*/
+#menu {
+    top: 0px;
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    position: fixed;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 100%;
+    border-bottom-style: solid;
+    font-family: Code-Light;
+	border: none;
+
+}
+
+/*Ajustando fonte do menu  de acordo com a largura da tela do dispositivo */
+@media screen and (max-width: 768px){
+    #menu{
+        font-size: 50%;
+    }
+}
+/* Animação de Fade inicial*/
+@-webkit-keyframes fade{
+    from{ opacity: 0;}
+    to{opacity: 0.8;}
+}
+
+@keyframes fade{
+    from{ opacity: 0;}
+    to{opacity: 0.8;}
+}
+
+#menu ul{
+    left: 17%;
+    top: 40%;
+    width: 80%;
+    position: relative;
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+    -webkit-animation: fade 4s; /* Chrome, Safari, Opera */
+    animation: fade 4s;
+}
+
+#menu li{
+    display: inline;
+    padding: 1%;
+
+}
+
+#menu a.linkMenu {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#menu a.linkMenu:hover {
+    color: #de3600;
+    font-weight: bold; 
+}
+
+/* Estilo da logomarca */
+
+#logo {
+    opacity: 95%;
+    top: 1%;
+    position: fixed;
+    left: 10%;
+    height: 13%;
+}
+
+@media screen and (max-width: 1024px){
+    #logo{
+        left: 3%;
+    }
+    #menu ul{
+        left: 12%;
+    }
+}
+
+/* Estilo do footer */
+
+#footer{
+    top: 95%;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    border-top-style: solid;
+	background-color: #de8600;
+}
+.copy {
+	text-align: center;
+	list-style-type: none;
+	
+}
+.site-footer {
+  margin-top: 7px;
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+  font
+
+}
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+.social{
+  margin-top: 25px;
+  padding: 0;
+  margin: 0; 
+  list-style: none;
+}
+ul.social {
+  text-align: right;
+}
+ul.social li {
+  display: inline-block;
+}
+ul.social li a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: block;
+}
+/* Estilo das páginas de conteúdo */
+
+/*Estilo da barra de navegação da página about */
+
+#nav_menu{
+    width: 10%;
+    position: absolute;
+    font-family: Code-Light;
+    cursor: pointer;
+}
+
+#navMari1,#navMari2,#navMari3{
+    width: 8%;
+    position: fixed;
+    opacity: 0.6;
+    z-index: 5;
+    background-color: #ED1A3A;
+    text-align: center;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    -webkit-animation: slide 2s; /* Chrome, Safari, Opera */
+    animation: slide 2s;
+    -webkit-animation-delay:.5s;
+    animation-delay:.5s;
+}
+
+#fontNav{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;		
+    text-decoration: none;	
+    color: #2A1337;
+}
+
+#navMari1{top: 45%;}
+#navMari2{top: 50%;}
+#navMari3{top: 55%;}
+
+#navMari1:hover,#navMari2:hover,#navMari3:hover{
+    background-color: #FFFFFF;
+}		
+
+
+@-webkit-keyframes slide{
+    from{ left: -10%;}
+    to{left: 0;}
+}
+
+@keyframes slide{
+    from{ left: -10%;}
+    to{left: 0;}
+}
+
+#nav1,#nav2,#nav3,#nav-arrow{
+    width: 100%;
+    position: relative;
+    opacity: 0.8;
+    z-index: 5;
+    background-color: #FCE8ED;
+    text-align: center;
+    font-size: 100%;
+}
+/* Ajusta o menu para dispositivos com largura de tela menor ou igual a 480px*/
+@media screen and (max-width: 480px){
+    #nav_menu{
+        width: 30%;
+    }
+
+}
+#nav-arrow{
+    width: 20%;
+}
+#nav1,#nav2,#nav3{
+    display: none;
+}
+#nav1:hover,#nav2:hover,#nav3:hover,#nav-arrow:hover{
+    background-color: #ED1A3A;
+}
+
+/* Estilo da animação de banners da página home */
+
+#banners{
+    -webkit-animation: slide-screen 8s linear infinite; /* Chrome, Safari, Opera */
+    animation: slide-screen 8s linear infinite;	
+}
+
+#banners:hover{ -webkit-animation-play-state:paused;
+                animation-play-state:paused; }
+
+#banner1{background: url("images/banners/banner1.jpg") no-repeat center center fixed;
+
+}
+#banner2{
+    left: 100%;
+    background: url("images/banners/banner2.jpg") no-repeat center center fixed;
+}
+#banner3{
+    left: 200%;
+    background: url("images/banners/banner3.jpg") no-repeat center center fixed;
+}
+
+@-webkit-keyframes slide-screen{
+    28%{ left: 0;}
+    35%{ left: -100%;}
+    60%{ left: -100%;}
+    67%{ left: -200%;}
+    95%{ left: -200%;}
+    100%{ left: 0;}
+}
+
+@keyframes slide-screen{
+    28%{ left: 0;}
+    35%{ left: -100%;}
+    60%{ left: -100%;}
+    67%{ left: -200%;}
+    95%{ left: -200%;}
+    100%{ left: 0;}
+}
+
+
+#faq{
+    background: url("images/banners/faq.jpg") no-repeat center center fixed;
+}
+
+#local{
+    background: url("images/banners/congressista.png") no-repeat center center fixed;
+}
+
+#area-do-congressista{
+    background: url("images/banners/congressista.png") no-repeat center center fixed;
+}
+
+#programacao{
+    background: url("images/banners/congressista.png") no-repeat center center fixed;	
+}
+
+#area-do-congressista,#banner1, #banner2, #banner3, #banners, #faq, #local, #programacao{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+}
+/* Estilo do Iframe de conteudo */
+
+#content-frame{
+    top: 17%;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    opacity: 0.9;
+    border-style: none;
+    -webkit-animation: fade 2s; /* Chrome, Safari, Opera */
+    animation: fade 2s;
+}
+
+/*Estilo da página about */
+
+/*Estilo do frame de conteúdo da página about*/
+#about-frame{
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    border-style: none;
+    background-color: #2A1337;
+    -webkit-animation: fade 2s; /* Chrome, Safari, Opera */
+    animation: fade 2s;
+}
+
+/*Estilo dos textos da página about */
+#about-content{
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    font-family: Code-Light;
+}
+
+#about-content .title{
+    text-align: center;
+    font-size: 200%;
+    font-family: Code-light;
+    color: #ED1A3A;
+}
+
+#about-content .text{
+    text-align: justify;
+    color: #FFF;
+}
+
+/*Estilo do bloco facebook na página about */
+
+iframe.facebook{
+    float: right; 
+    width: 300px;
+    height: 350px;
+    position: fixed;
+    z-index: 5;
+    top: 30%;
+    right: 5%;
+    opacity: 1;
+}
+
+/*Estilo do bloco facebook na página about */
+iframe.likeFacebook{
+    float: right; 
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    z-index: 10;
+    top: 17%;
+    right: 2%;
+    opacity: 1;
+}
+
+/* Estilo da pagina de conteudo padrão */
+
+#image-container{
+    left: 10%;
+    width: 30%;
+    height: 80%;
+    top: 15%;
+    position: absolute;
+}
+
+#page-content{
+    left: 45%;
+    width: 45%;
+    height: 80%;
+    top: 5%;
+    position: absolute;
+}
+
+/* Estilo do formulario de contato */
+table {
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    top: 20%;	
+}
+
+th.campo {
+    width: auto;		
+}
+
+
+.formulario {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+    background-color: #2A1337;
+    opacity: 0.8;
+    color: #FFFFFF;
+    display: block;
+    height: auto;
+    text-align: center;
+    font-family: Billabong;
+    font-size: 130%;
+}
+/* Estilo do titulo dos formularios */
+.formulario .title{
+    font-size: 150%;
+    font-family: Code-light;
+}
+/* Estilo dos botões */
+.btn-contato-reset, .btn-contato-enviar{
+    background-color: #ED1A3A;
+    padding: 10px 25px 10px 25px;
+    border-style: none;
+    font-family: Billabong;
+    font-size: 100%;
+}
+.btn-contato-reset:hover, .btn-contato-enviar:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+/* Estilo dos campos */
+
+.formulario textarea{
+    width: 90%;
+}
+
+@media screen and (max-width: 480px){
+    .formulario {
+        left: 10%;
+        width: 80%;
+    }
+}

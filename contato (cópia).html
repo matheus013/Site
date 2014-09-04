@@ -12,32 +12,32 @@
 <body bgcolor = "#ED1A3A">
 
         <div class="formulario">  
-        <div class="title"><br />Fale conosco</div><br>
+        <div class="title">Fale conosco</div><br>
         <form action="envia.php" method="POST"> <!--  chama o envia.php -->        
         
-        <table>
-	  			<tr>
-	  				<div class="formulario-campo"> <th>Nome</th>
-			        <span id="sprytextfield1">
-			       <th class="campo"><input type="text" name="nomeremetente" class="textfield-nome" placeholder="Seu nome" size="20%"/></th> 
-			        <br /><span class="textfieldRequiredMsg">Digite seu nome</span></span>
-		        </div>
-		  		</tr>	
-	
-				<tr>
-					<div class="formulario-campo"><th>E-mail</th><span id="sprytextfield2">
-	        			<th class="campo"><input type="text" name="emailremetente" class="textfield-nome" placeholder="Seu e-mail" size="20%"/></th>
-	        			<br /><span class="textfieldRequiredMsg">Digite seu e-mail</span>
-	        			<span class="textfieldInvalidFormatMsg">Formato de e-mail inválido</span></span></div>
-				</tr>       
-	
-	         <tr>
-	        		<div class="formulario-campo"><th>Assunto</th><span id="sprytextfield5">
-		        		<th class="campo"><input type="text" name="assunto" class="textfield-nome" placeholder="Assunto" size="20%"/></th>
-		        		<br /><span class="textfieldRequiredMsg">Digite o assunto</span></span></div><br>
-	         </tr>                                                        			 
         
-        </table>
+                   
+        <div class="formulario-texto"></div>
+        <div class="formulario-campo">Nome
+        <span id="sprytextfield1">
+        <input type="text" name="nomeremetente" class="textfield-nome" placeholder="Seu nome"/>
+        <br /><span class="textfieldRequiredMsg">Digite seu nome</span></span></div>
+        
+        
+        <div class="formulario-texto"></div>
+        <div class="formulario-campo">E-mail<span id="sprytextfield2">
+        <input type="text" name="emailremetente" class="textfield-nome" placeholder="Seu e-mail"/>
+        <br /><span class="textfieldRequiredMsg">Digite seu e-mail</span>
+        <span class="textfieldInvalidFormatMsg">Formato de e-mail inválido</span></span></div>
+        
+                                                              
+        
+                      
+        <div class="formulario-texto"></div>
+        <div class="formulario-campo">Assunto<span id="sprytextfield5">
+        <input type="text" name="assunto" class="textfield-nome" placeholder="Assunto"/>
+        <br /><span class="textfieldRequiredMsg">Digite o assunto</span></span></div><br>
+        
         
         <div  style="float:left; width:80%;"> </div>
         <div class="formulario-texto">Mensagem</div>
@@ -54,7 +54,6 @@
         </form> 
         
         </div><!--Fim do Conteudo Paginas-->
-        
                 
  <!-- Chama validação do formulário -->
  
