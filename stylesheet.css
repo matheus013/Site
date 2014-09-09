@@ -18,11 +18,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 100%;
+  color: #de3600;
 }
 
 h3 {
   font-size: 200%;
+  color: #fd7b01;
 }
 
 h4 {
@@ -91,11 +93,11 @@ body {
     position: fixed;
     text-align: center;
     opacity: 0.8;
-    font-size: 100%;
+    font-size: 130%;
     border-bottom-style: solid;
     font-family: Code-Light;
     font-weight: 200;
-    background-color: black;
+    background-image: url('images/menu.jpg'); 
 
 }
 
@@ -282,14 +284,6 @@ body {
     100%{ left: 0;}
 }
 
-#local{
-    margin-top: 3%;
-    margin-right: 0;
-    height: 200px;
-    left: 21%;
-    
-}
-
 
 #area-do-congressista,#banner1, #banner2, #banner3, #banners, #faq, #local, #programacao{
     width: 100%;
@@ -409,20 +403,18 @@ th.campo {
     width: auto;		
 }
 
-
 .formulario {
     position: absolute;
     left: 25%;
     top: 5%;
     width: 50%;
-    background-color: #2A1337;
     opacity: 0.8;
-    color: #FFFFFF;
+    color: #000000;
     display: block;
     height: auto;
     text-align: center;
-    font-family: Billabong;
-    font-size: 130%;
+    font-family: Code-light;
+    font-size: 100%;
 }
 /* Estilo do titulo dos formularios */
 .formulario .title{
@@ -431,10 +423,9 @@ th.campo {
 }
 /* Estilo dos botões */
 .btn-contato-reset, .btn-contato-enviar{
-    background-color: #ED1A3A;
+    background-color: #de3600;
     padding: 10px 25px 10px 25px;
     border-style: none;
-    font-family: Billabong;
     font-size: 100%;
 }
 .btn-contato-reset:hover, .btn-contato-enviar:hover{
@@ -458,26 +449,46 @@ th.campo {
    ========================================================================== */
 
 #services {
-  padding-top: 160px;
-  margin-top: -60px;
+    margin-top: 150px;
+    margin-left: 170px;
 
 }
-#item1,item2,item3,item4 {
-  padding-bottom: 40px;
-  text-align: center;
-  -webkit-backface-visibility: hidden;
-  /* Chrome, Safari, Opera */
-  backface-visibility: hidden;
-  margin: 0 auto;
-  width: 120px;
-  height: 113px;
-  display: inline-block;
+#missao{
   float: left;
+  margin-right: 60px;
+  text-align: center;
+  width: 180px;
+  display: block;
+ 
  
 }
-#item1 h3,item2 h3,item3 h3,item4 h3 {
-  font-size: 18px;
-  font-weight: 600;
+#valores{
+  float: left;
+  margin-right: 60px;
+  text-align: center;
+  width: 180px;
+  display: block;
+ 
+ 
 }
+#visao{
+  float: left;
+  margin-right: 60px;
+  text-align: center;
+  width: 180px;
+  display: block;
+  
+ 
+}
+#negocio{
+  float: left;
+  margin-right: 60px;
+  text-align: center;
+  width: 180px;
+  display: block;
+  
+ 
+}
+
 
 
