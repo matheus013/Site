@@ -14,7 +14,9 @@
 }
 
 h1 {
-  font-size: 2.6em;
+  font-size: 75%;
+  color:#fd7b01;
+  opacity: 0.7;
 }
 
 h2 {
@@ -79,7 +81,7 @@ h6 {
 }
 Cor do fundo */
 body {
-    background-color: #FFF;
+    background-color: #000;
     overflow-x: hidden;
 
 }
@@ -97,7 +99,7 @@ body {
     border-bottom-style: solid;
     font-family: Code-Light;
     font-weight: 200;
-    background-image: url('images/menu.jpg'); 
+    background-image: url('images/menu.png'); 
     background-repeat: repeat-x;
     background-position: fixed;
 
@@ -493,5 +495,26 @@ th.campo {
  
 }
 
+#footer{
+    top: 96%;
+    height: 4%;
+    left: 48%;
+    width: 52%;
+    position: fixed;
+    
+    
+    
+}
 
+#copy{
 
+    margin-top: 10px;
+    margin-right: 500px;
+    float: left;
+    display:  inline;
+}
+#login{
+    margin-top: 10px;
+    float: left;
+    display:  inline;
+}
