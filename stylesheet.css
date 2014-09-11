@@ -20,8 +20,9 @@ h1 {
 }
 
 h2 {
-  font-size: 100%;
+  font-size: 115%;
   color: #de3600;
+  font-weight: bold;
 }
 
 h3 {
@@ -81,7 +82,7 @@ h6 {
 }
 Cor do fundo */
 body {
-    background-color: #000;
+    background-color: #FFF;
     overflow-x: hidden;
 
 }
@@ -372,7 +373,7 @@ iframe.likeFacebook{
     height: 65px;
     position: fixed;
     z-index: 10;
-    top: 15%;
+    top: 3%;
     right: 2%;
     opacity: 1;
 }
