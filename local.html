@@ -1,9 +1,91 @@
 <!DOCTYPE html>
+<head>
+    <!-- CSS do validador -->
+    <link href="validador/css/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+    <link href="validador/css/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+    <link href="validador/css/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+</head>
 <html>
     <link rel="stylesheet" type="text/css" href="stylemap.css">
     <body>
         <div id="local">
             <iframe ip="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3934.4622049087143!2d-35.77552380355891!3d-9.555365080145597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x701457bf524b0cb%3A0x9fa7897746e35cc4!2sUFAL+-+Instituto+de+Computa%C3%A7%C3%A3o.!5e0!3m2!1spt-BR!2sbr!4v1408063272018" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+        </div>
+        <div id="form-1" bgcolor = "#ED1A3A">
+
+            <div class="formulario">  
+                <div class="title"><br />Contato</div><br>
+                <form action="envia.php" method="POST"> <!--  chama o envia.php -->        
+
+                    <table>
+                        <tr>
+                        <div class="formulario-campo"> <th>Nome</th>
+                            <span id="sprytextfield1">
+                                <th class="campo"><input type="text" name="nomeremetente" class="textfield-nome" placeholder="Seu nome" size="20%"/></th> 
+                                <br /><span class="textfieldRequiredMsg">Digite seu nome</span></span>
+                        </div>
+                        </tr>	
+
+                        <tr>
+                        <div class="formulario-campo"><th>E-mail</th><span id="sprytextfield2">
+                                <th class="campo"><input type="text" name="emailremetente" class="textfield-nome" placeholder="Seu e-mail" size="20%"/></th>
+                                <br /><span class="textfieldRequiredMsg">Digite seu e-mail</span>
+                                <span class="textfieldInvalidFormatMsg">Formato de e-mail inválido</span></span></div>
+                        </tr>       
+
+                        <tr>
+                        <div class="formulario-campo"><th>Assunto</th><span id="sprytextfield5">
+                                <th class="campo"><input type="text" name="assunto" class="textfield-nome" placeholder="Assunto" size="20%"/></th>
+                                <br /><span class="textfieldRequiredMsg">Digite o assunto</span></span></div><br>
+                        </tr>                                                        			 
+
+                    </table>
+
+           
+                    <div class="formulario-texto">Mensagem</div>
+                    <div class="formulario-campo"><span id="sprytextarea1">
+                            <textarea name="mensagem" cols="10" rows="6" placeholder="Digite sua Mensagem"></textarea>
+                            <br /><span class="textareaRequiredMsg">Digite sua mensagem</span></span></div>
+
+                    <div>
+                        <input name="enviar" type="reset" value="Limpar" class="btn-contato-reset"  />
+                        <input name="enviar" type="submit" value="Enviar" class="btn-contato-enviar"  />                
+                    </div>
+
+
+                </form> 
+
+            </div><!--Fim do Conteudo Paginas-->
+
+
+            <!-- Chama validação do formulário -->
+
+            <script type="text/javascript" src="validador/js/SpryValidationTextField.js" language="javascript" ></script>
+            <script type="text/javascript" src="validador/js/SpryValidationTextarea.js" language="javascript" ></script>
+            <script type="text/javascript" src="validador/js/SpryValidationSelect.js" language="javascript" ></script>    
+
+            <script type="text/javascript">
+
+                var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+                var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+                var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+                var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+
+            </script>
+
+
+
+        </div>
+        <div id="contact">
+            <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=655613047866451&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="https://facebook.com/iconejr" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
         </div>
     </body>
 </html>

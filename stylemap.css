@@ -1,9 +1,81 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
+@font-face
+{
+    font-family:Code-Light;
+    src: url(fonts/CODE_Light.otf);
+}
+@font-face
+{
+    font-family:Code-Bold;
+    src: url(fonts/CODE_Bold.otf);
+}
+@font-face
+{
+    font-family: Billabong;
+    src: url(fonts/Billabong.ttf);
+}
+body{
+
+}
 #local{
-height: 100%;
-width: 100%;
-top: 0;
-left: 0;
+width: 25.3%;
+height: 285px;
+display: block;
+float: left;
+margin-right: 3%;
+}
+#form-1{
+    display: block;
+    float: left;
+}
+
+/* Estilo do formulario de contato */
+table {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: -20%;
+}
+
+.formulario {
+    width: 130%;
+    opacity: 0.8;
+    color: #000000;
+    display: block;
+    height: 50%;
+    text-align: center;
+    font-family: Code-light;
+    font-size: 100%;
+    background: #fd7b01;
+    
+}
+/* Estilo do titulo dos formularios */
+.formulario .title{
+    font-size: 150%;
+    font-family: Code-light;
+}
+/* Estilo dos botões */
+.btn-contato-reset, .btn-contato-enviar{
+    background-color: #de3600;
+    padding: 1% 2.5% 1% 2.5%;
+    border-style: none;
+    font-size: 100%;
+}
+.btn-contato-reset:hover, .btn-contato-enviar:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+/* Estilo dos campos */
+
+.formulario textarea{
+    margin-left: 10%;
+    width: 60%;
+}
+
+@media screen and (max-width: 48%){
+    .formulario {
+        margin-left: 10%;
+        width: 80%;
+    }
 }
