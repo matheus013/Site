@@ -16,20 +16,33 @@
     font-family: Billabong;
     src: url(fonts/Billabong.ttf);
 }
-body{
+body{background: #FFF;}
+#box-C,#box-M,#box-F{
+	margin-top: 7%;
+	display: block;
+    float: left;
+	margin-right: 3%;
+	opacity: 0.8;
+}
+iframe{
+border:none;
+}
+#box-C:hover,#box-M:hover,#box-F:hover{
+	opacity: 1;
+}
+#box-C:visited,#box-M:visited,#box-F:visited{
+	opacity: 1;
+}
+#box-C:active,#box-M:active,#box-F:active{
+	opacity: 1;
+}
+#box-M{
+margin-left:10%;
+width: 25.3%;
+height: 50%;
 
 }
-#local{
-width: 25.3%;
-height: 285px;
-display: block;
-float: left;
-margin-right: 3%;
-}
-#form-1{
-    display: block;
-    float: left;
-}
+
 
 /* Estilo do formulario de contato */
 table {
@@ -40,14 +53,16 @@ table {
 
 .formulario {
     width: 130%;
-    opacity: 0.8;
     color: #000000;
     display: block;
     height: 50%;
     text-align: center;
     font-family: Code-light;
     font-size: 100%;
-    background: #fd7b01;
+    background: #fff;
+	border:solid;
+	border-width: medium;
+	
     
 }
 /* Estilo do titulo dos formularios */

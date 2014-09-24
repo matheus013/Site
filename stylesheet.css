@@ -520,6 +520,7 @@ th.campo {
     display:  inline;
 }
 #login{
+	cursor: pointer;
     margin-top: 1%;
     float: left;
     display:  inline;
